@@ -1,22 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { javascript1 } from "./Javascript/javascript_1_day196";
 
 function App() {
+  console.log("---------Javascript 1 (Day 196)---------");
+  javascript1();
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <label>1. Problem Solving Javascript : javascript_1_day196.js</label>
       </header>
     </div>
   );
