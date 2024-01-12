@@ -1,5 +1,6 @@
 export const javascript2 = () => {
-  console.log("------------------Day 197 : Javascript 2------------------");
+  console.log("------------------Day 197/202 : Javascript 2------------------");
+
   console.log("1. -----Create and access object-----");
   //a. Ways to create object
   var obj1 = {
@@ -8,8 +9,8 @@ export const javascript2 = () => {
   };
   var obj2 = new Object();
 
-  console.log(`   obj1.a : ` + obj1.a);
-  console.log(`   obj1["a"] : ` + obj1["a"]);
+  console.log(`   obj1.a : ` + obj1.a); // 10
+  console.log(`   obj1["a"] : ` + obj1["a"]); // 10
 
   //b. Nested objects + object with functions
   console.log("b> Nested objects + object with functions");
@@ -24,17 +25,23 @@ export const javascript2 = () => {
       profession: "Coder",
     },
   };
-  console.log(`   dog.name : ` + dog.name);
-  dog.bark("bow wow");
+  console.log(`   dog.name : ` + dog.name); //dog.name : Bully
+  dog.bark("bow wow"); //dog.bark called : Woof bow wow
 
   //c. Class example (Interview question)
   var a = {},
     b = { key: "b" },
     c = { key: "c" };
 
+  //Keys are stringified by JS internally
+  console.log(`   a.toString() : `, a.toString()); //[object Object]
+  console.log(`   b.toString() : `, b.toString()); //[object Object]
+  console.log(`   c.toString() : `, c.toString()); //[object Object]
+
   a[b] = 123; //b gets stringified to [object Object]
   a[c] = 456; //c gets stringified to [object Object]
-  console.log(`   a[b] : ` + a[b]); //456
+  console.log(`   a    : `, a); //{[object Object]: 456}
+  console.log(`   a[b] : `, a[b]); //456
 
   console.log("2. -----Functions--------------------");
   // Note: Function with no returns, return undefined
@@ -70,7 +77,7 @@ export const javascript2 = () => {
   var inner = function () {
     console.log("   inner function - print");
   };
-  outer(inner);
+  outer(inner); //inner function - print
 
   console.log("3. -----Passing multiple arguments-------");
   //a. Passing many arguments and capturing as single argument
@@ -102,23 +109,23 @@ export const javascript2 = () => {
   //Hoisting - 3
   var a3_1 = 2000;
   function foo_a3_1() {
-    console.log(`   a3_1 = ` + a3_1); //3000 
+    console.log(`   a3_1 = ` + a3_1); //3000
   }
   var a3_1 = 3000;
   foo_a3_1();
 
   console.log("4. -----Array of complex objects-------");
-  var obj_4 = []
+  var obj_4 = [];
   var obj_4_1 = new Array(0);
 
   //5. Constructor
   console.log("5. -----Constructor--------------------");
   //Example 1
-  function Dog (name, breed) {
-    this.name = name
-    this.breed = breed
+  function Dog(name, breed) {
+    this.name = name;
+    this.breed = breed;
   }
 
-  var d1 = new Dog("Pluto", "Pom")
-  console.log(d1)
+  var d1 = new Dog("Pluto", "Pom");
+  console.log(d1);
 };

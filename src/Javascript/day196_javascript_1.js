@@ -1,7 +1,7 @@
 import { type } from "@testing-library/user-event/dist/type";
 
 export const javascript1 = () => {
-  console.log("------------------Day 196 : Javascript 1------------------");
+  console.log("------------------Day 196/201 : Javascript 1------------------");
   //1. Primitive data types [String, Number, Boolean, Null, Undefined]
   var a = "abc"; //String
   var b = 3; //Number
@@ -37,9 +37,11 @@ export const javascript1 = () => {
   console.log(`   + 'hello' : ` + +"hello"); //NaN
   var a4 = +"hello"; //Evaluates to NaN
   var b4 = +"hi"; //Evaluates to NaN
+  console.log(`   + 'hello' == + 'hi' : ` + (a4 == b4)); //false NaN != NaN
   console.log(`   + 'hello' === + 'hi' : ` + (a4 === b4)); //false NaN != NaN
   console.log(`   + 'hello' === + 'hello' : ` + (a4 === a4)); //false NaN != NaN
-  console.log(`   typeof(+ 'hello') : ` + typeof a4); //Type = number
+  console.log(`   typeof(+ 'hello') : ` + typeof a4); //Type = number (Infinity is a number)
+
   console.log(`   3 + '3' = ` + (3 + "3")); //33 string
   console.log(`   typeof(3 + '3') : ` + typeof (3 + "3")); //string
   console.log(`   3 + 2 + '3' = ` + (3 + 2 + "3")); //53 string
@@ -108,7 +110,7 @@ export const javascript1 = () => {
 
   //8. Comparing null & undefined
   console.log("8. -------Comparing null & undefined-------");
-  console.log("   null == undefined => " + (null == undefined));
+  console.log("   null == undefined => " + (null == undefined)); //true
   console.log("   null === undefined => " + (null === undefined));
   console.log(`   false == "0" => ` + (false == "0"));
   console.log(`   false === "0" =>` + (false === "0"));
