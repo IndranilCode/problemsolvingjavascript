@@ -1,5 +1,5 @@
 export const javascript3 = () => {
-    console.log("------------------Day 198/203 : Javascript 3------------------");
+    console.log("------------------Day 203 : Javascript 3------------------");
 
     //1. Call Apply Bind
     console.log("1. -----Call apply bind-----");

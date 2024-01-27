@@ -1,7 +1,7 @@
 import { type } from "@testing-library/user-event/dist/type";
 
 export const javascript1 = () => {
-  console.log("------------------Day 196/201 : Javascript 1------------------");
+  console.log("------------------Day 201 : Javascript 1------------------");
   //1. Primitive data types [String, Number, Boolean, Null, Undefined]
   var a = "abc"; //String
   var b = 3; //Number

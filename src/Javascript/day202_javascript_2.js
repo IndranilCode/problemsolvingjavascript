@@ -1,5 +1,5 @@
 export const javascript2 = () => {
-  console.log("------------------Day 197/202 : Javascript 2------------------");
+  console.log("------------------Day 202 : Javascript 2------------------");
 
   console.log("1. -----Create and access object-----");
   //a. Ways to create object
